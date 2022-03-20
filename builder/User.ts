@@ -7,22 +7,22 @@ export class User {
     private address: string;
 
     constructor(builder: UserBuilder) {
-        this.name = builder.Name;
-        this.age = builder.Age;
-        this.phone = builder.Phone;
-        this.address = builder.Address
+        this.name = builder.getName();
+        this.age = builder.getAge();
+        this.phone = builder.getPhone();
+        this.address = builder.getAddress()
     }
 
-    get Name() {
+    getName() {
         return this.name;
     }
-    get Age() {
+    getAge() {
         return this.age;
     }
-    get Phone() {
+    getPhone() {
         return this.phone;
     }
-    get Address() {
+    getAddress() {
         return this.address;
     }
 }
